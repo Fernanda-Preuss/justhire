@@ -4,10 +4,13 @@ Baixar em [python.org/downloads](https://www.python.org/downloads/) — marcar "
 ### 2.Abrir o terminal na pasta do projeto e rodar:
 Instalar o Django e o driver do banco
 `pip install django psycopg2-binary`
+
 Aplicar as tabelas no banco
 `python manage.py migrate`
+
 Criar o usuário administrador
 `python manage.py createsuperuser`
+
 Iniciar o servidor
 `python manage.py runserver`
 
