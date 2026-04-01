@@ -1,0 +1,45 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/empresas.css' %}">
+{% endblock %}
+
+{% block title %}Empresas - JustHire{% endblock %}
+
+{% block content %}
+
+<div class="py-4 text-center">
+    <h1><i class="bi bi-building"></i> Empresas</h1>
+    <p class="text-muted">Escolha uma empresa para ver as vagas disponíveis</p>
+</div>
+
+<div class="row">
+    {% for empresa in empresas %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="bi bi-building-fill text-primary"></i> {{ empresa.nome }}
+                </h5>
+                <p class="text-muted small mb-2">
+                    <i class="bi bi-tag"></i> {{ empresa.area }}
+                </p>
+                <p class="card-text">{{ empresa.descricao }}</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+                <a href="{% url 'vagas_empresa' empresa.id %}" class="btn btn-primary w-100">
+                    <i class="bi bi-search"></i> Ver Vagas
+                </a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col-12 text-center text-muted py-5">
+        <i class="bi bi-inbox" style="font-size: 3rem;"></i>
+        <p class="mt-2">Nenhuma empresa cadastrada ainda.</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

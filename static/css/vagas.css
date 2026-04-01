@@ -1,0 +1,13 @@
+/* Título da página de vagas */
+.titulo-vagas {
+  padding: 2rem 0 1rem;
+}
+
+/* Card de cada vaga */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}

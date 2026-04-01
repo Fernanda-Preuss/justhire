@@ -1,0 +1,9 @@
+/* Card do formulário de inscrição */
+.card {
+  border-radius: 12px;
+}
+
+/* Espaçamento entre os campos */
+.form-label {
+  font-weight: 500;
+}

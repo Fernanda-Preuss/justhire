@@ -1,0 +1,9 @@
+/* Ícone de confirmação */
+.bi-check-circle-fill {
+  color: #198754;
+}
+
+/* Centralização da mensagem de sucesso */
+.container-sucesso {
+  padding: 4rem 0;
+}

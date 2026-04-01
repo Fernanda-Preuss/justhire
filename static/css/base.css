@@ -1,0 +1,32 @@
+/* Variáveis de cor */
+:root {
+  --azul: #1a56db;
+  --azul-dark: #1e429f;
+}
+
+/* Corpo da página */
+body {
+  padding-top: 70px;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--azul);
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #c7d7ff;
+}
+
+/* Rodapé */
+footer {
+  background: var(--azul-dark);
+  color: white;
+  margin-top: 60px;
+}
